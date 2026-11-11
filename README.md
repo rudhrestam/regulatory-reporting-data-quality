@@ -1,5 +1,7 @@
 # Regulatory Reporting Data Quality (Demo)
 
+![CI](https://github.com/rudhrestam/regulatory-reporting-data-quality/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 A regulatory report does not usually fail because the model was wrong. It fails because the file was: a counterparty code missing here, a currency nobody recognises there, a settlement date that lands before the trade date, a few records extracted twice — and totals that no longer tie back to what the business expected to report. By the time someone notices, the submission clock is already running. This project builds a small version of that problem on purpose, then runs the pre-submission data-quality framework that catches it before anything goes out.
 
 > This is a personal portfolio project on data-quality and reconciliation patterns for financial reporting. It is built on 100% synthetic data with original code, and does not represent work done for any employer. No employer names, systems, or real reporting data appear anywhere in it.
@@ -78,7 +80,7 @@ Prints the DQ scorecard, saves a copy to `dq_scorecard.txt`, and writes the quar
 
 ## Tech stack
 
-Python · NumPy · pandas
+Python 3.10+ · NumPy · pandas
 
 ## Ideas for extension
 
